@@ -1,0 +1,324 @@
+/* Couleurs */
+body {
+    background-color: #E5E1D9;
+    /* Fond Taupe */
+    color: #333;
+    /* Couleur du texte principale */
+    font-family: Arial, sans-serif;
+    /* Police de caractères */
+}
+
+/* CSS pour les liens */
+a {
+    color: #37391E; /* Remplacez VOTRE_COULEUR par la couleur souhaitée */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+}
+
+/* CSS pour les liens au survol */
+a:hover {
+    color: #A7A88A; /* Couleur au survol */
+}
+
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #DAA7A2;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+header img {
+    width: 70px;
+    /* Ajustez la largeur du logo selon vos besoins */
+    
+    /* Permet au navigateur de calculer la hauteur proportionnellement */
+    margin: 10px;
+    /* Espacement autour du logo */
+}
+
+
+/* Style pour la barre de recherche */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+/* Style pour la zone de texte de recherche */
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    /* Espace entre la zone de texte et le bouton */
+}
+
+/* Style pour le bouton de recherche */
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #DAA7A2;
+    /* Dusty Rose pour le bouton */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+.search-bar button:hover {
+    background-color: #A7A88A;
+    /* Sage plus foncé au survol */
+}
+
+.Produits-h2 {
+    text-align: center;
+}
+
+
+
+.Intro {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    /* Centrer horizontalement */
+    align-items: center;
+    /* Centrer verticalement */
+    background-image: url('images/fondintro.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style pour le texte de la section héros */
+.intro-text {
+    max-width: 1700px;
+    /* Largeur maximale du texte */
+    text-align: center;
+    /* Justifier le texte */
+}
+
+/* Style pour chaque paragraphe de texte */
+.intro-text p {
+    margin: 50px 0;
+    /* Espacement entre les paragraphes */
+}
+
+
+h1 {
+    font-size: 30px;
+    color: #37391E;
+}
+
+/* Navigation */
+nav {
+    background-color: #DAA7A2;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #37391E;
+    /* Olive Green pour les liens de navigation */
+    text-decoration: none;
+}
+
+
+main {
+    padding: 30px;
+}
+
+
+/* Conteneur principal des produits en vedette */
+.Produits {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Style pour chaque produit */
+.product {
+    width: calc(25% - 60px);
+    /* 4 produits par ligne avec un petit espacement */
+    margin-bottom: 40px;
+    margin-right: 20px;
+    /* Ajoutez une marge à droite pour compenser la marge gauche de l'élément suivant */
+    padding: 20px;
+    background-color: #E5E1D9;
+    /* Fond Taupe */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+    transition: transform 0.3s ease;
+    /* Animation de transition */
+    margin: auto;
+    text-align: center;
+}
+
+.product:nth-child(4n) {
+    margin-right: 0;
+    /* Retirez la marge à droite du dernier élément de chaque ligne */
+}
+
+/* Effet de survol pour chaque produit */
+.product:hover {
+    transform: translateY(-5px);
+    /* Déplacer légèrement vers le haut au survol */
+}
+
+/* Style pour l'image du produit */
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Style pour le titre du produit */
+.product h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #37391E;
+    /* Olive Green pour le texte */
+    text-align: center;
+}
+
+/* Style pour la description du produit (initialement cachée) */
+.product p {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #37391E;
+    /* Olive Green pour le texte */
+    /* display: none;
+    /* Cacher la description par défaut */
+    text-align: center;
+}
+
+/* Afficher la description au survol de l'image */
+.product:hover p {
+    display: block;
+    /* Afficher la description au survol */
+}
+
+/* Style pour le bouton du produit */
+.product button {
+    background-color: #DAA7A2;
+    /* Dusty Rose pour les boutons */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+/* Effet au survol du bouton */
+.product button:hover {
+    background-color: #A7A88A;
+    /* Sage plus foncé au survol */
+}
+
+/* Boutons */
+.btn {
+    background-color: #A7A88A;
+    /* Sage pour les boutons */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* Transition fluide */
+
+}
+
+.btn:hover {
+    background-color: #DAA7A2;
+    /* Dusty Rose plus foncé au survol */
+}
+
+/* Pied de page */
+footer {
+    background-color: #A7A88A;
+    /* Sage pour le pied de page */
+    padding: 20px;
+    text-align: center;
+}
+
+/* CSS pour le formulaire d'inscription */
+form {
+    width: 400px; /* Largeur du formulaire */
+    margin: 0 auto; /* Centre le formulaire horizontalement */
+    font-size: 18px; /* Taille de police du texte */
+}
+
+/* Espacement entre les lignes du formulaire */
+form label,
+form input,
+form select {
+    display: block; /* Afficher les éléments sur une ligne */
+    margin-bottom: 20px; /* Espacement entre les lignes */
+}
+
+/* Style pour le lien de redirection vers la page de connexion */
+.connexion-link {
+    display: block; /* Afficher le lien en bloc */
+    text-align: center; /* Aligner le texte au centre */
+    margin-top: 20px; /* Espacement du haut */
+    font-size: 18px; /* Taille de police du texte */
+}
+
+/* CSS pour centrer le contenu à l'intérieur de <main> */
+.inscription-content {
+    display: flex;
+    flex-direction: column; /* Aligner les éléments verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Ajuste la hauteur à la taille de l'écran */
+}
+/* CSS pour le formulaire de connexion */
+form {
+    width: 300px; /* Largeur du formulaire */
+    margin: 0 auto; /* Centre le formulaire horizontalement */
+    font-size: 18px; /* Taille de police du texte */
+}
+
+/* Espacement entre les lignes du formulaire */
+form label,
+form input {
+    display: block; /* Afficher les éléments sur une ligne */
+    margin-bottom: 20px; /* Espacement entre les lignes */
+}
+
+/* CSS pour le lien d'inscription */
+.inscription-link {
+    display: block; /* Afficher le lien en bloc */
+    text-align: center; /* Aligner le texte au centre */
+    margin-top: 20px; /* Espacement du haut */
+    font-size: 18px; /* Taille de police du texte */
+}
+
+/* CSS pour centrer le contenu à l'intérieur de <main> */
+.connexion-content {
+    display: flex;
+    flex-direction: column; /* Aligner les éléments verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Ajuste la hauteur à la taille de l'écran */
+}
+
+
+
